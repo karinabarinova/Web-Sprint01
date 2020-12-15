@@ -1,0 +1,13 @@
+.gauntlet {
+    height: 200px;
+    width: 100px;
+}
+.man {
+    height: 4em;
+    width: 2em;
+    margin-right: 2em;
+}
+.gauntlet:hover ~ table tbody tr:nth-child(2n) td:nth-child(2n),
+.gauntlet:hover ~ table tbody tr:nth-child(2n + 1) td:nth-child(2n + 1) {
+    opacity: 0;
+}

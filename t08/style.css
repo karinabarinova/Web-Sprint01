@@ -1,0 +1,31 @@
+.container {
+    margin: 20px;
+    height: 100px;
+    border: 1px solid rosybrown;
+}
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    border: 1.5px solid darkgreen;
+    animation-name: slide-horizontal;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transition: background-color 2s ease-out;
+}
+.round:hover {
+    background-color: red;
+    border: 1.5px solid red;
+}
+
+@keyframes slide-horizontal {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: calc(100% - 150px);
+    }
+}

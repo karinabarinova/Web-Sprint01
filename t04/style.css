@@ -1,0 +1,46 @@
+h1, h2 {
+  text-align: center;
+}
+h1.example {
+    text-align: left;
+}
+.subtopic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: calc(2vw);
+}
+
+.elements {
+  border:  1px solid grey;
+  padding: 5px;
+}
+.background {
+    background: red;
+}
+.border {
+    border: 2px solid red;
+}
+.color {
+    color: purple;
+}
+.cursor {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .subtopic {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .subtopic {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .subtopic {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,75 @@
+form label {
+    text-transform: uppercase;
+}
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px;
+    line-height: 4em;
+    color: #808080;
+}
+form {
+    font-size: 0.9em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 1em;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    width: 16em;
+    user-select: none;
+    border: 1px solid #c3c3c3;
+    border-radius: 2em;
+    text-align: center;
+    margin: 10px 30px;
+}
+.custom-checkbox:checked + label {
+    background-color: #212a4c;
+    color: white;
+}
+.custom-checkbox:checked + label::after {
+    content: "\2003✓";
+}
+.details {
+    flex-grow: 5;
+}
+h1 {
+    color: #d87a8a;
+    font-weight: 700;
+}
+h2 {
+    text-align: center;
+}
+.send {
+    justify-content: center;
+    flex-grow: 1;
+    color: white;
+    background-color: #d87a8a;
+    border: none;
+    margin: 0;
+    border-radius: unset;
+    font-weight: 700;
+}
+.send:hover {
+    transition: 2s;
+    background-color: #212a4c;
+}
+.row-input {
+    display: flex;
+}
+.row-input > input {
+    flex-grow: 1;
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    outline: none;
+}
+.row-button {
+    display: flex;
+}

@@ -1,0 +1,27 @@
+.row {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.input {
+    color: #52813a;
+    flex-grow: 3;
+    height: 3em;
+}
+input::placeholder {
+    color: green;
+}
+.button {
+    color: #52813a;
+    height: 2.3em;
+    margin-top: 0.3em;
+}
+.input:hover, .button:hover {
+    color: red;
+}

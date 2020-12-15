@@ -1,0 +1,105 @@
+.header {
+  width: 80vw;
+  background: gray;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid darkgray;
+  line-height: 2.5em;
+  color: white;
+}
+span {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-decoration: underline;
+}
+* {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.top-menu {
+  margin: -1em;
+}
+.first-range {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background: grey;
+  border: 1px solid darkgrey;
+  margin-top: 20px;
+}
+
+.submenu-down {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.submenu-down > li {
+  width: 300px;
+  position: relative;
+  top: 30px;
+  left: -60px;
+  margin: 2px 20px 2px 20px;
+  border-radius: 2px;
+  background: gray;
+  border: 1px solid black;
+}
+
+.submenu-down > li:hover {
+    background-color: cadetblue;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.top-menu > .first-range:hover {
+    background-color: cadetblue;
+    text-decoration: underline;
+}
+
+.submenu-down > li > ul > li {
+  width: 300px;
+  position: relative;
+  left: 245px;
+  top: -21px;
+  margin: 2px 20px 2px 20px;
+  border-radius: 2px;
+  background: gray;
+  border: 1px solid black;
+}
+.submenu-down > li > ul > li:hover {
+    background-color: cadetblue;
+    font-weight: 800;
+}
+
+.first-range:hover > .submenu-down {
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.first-range:hover > .submenu-down ul {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.submenu-down > .ukraine:hover > .submenu-ukraine {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.submenu-down > .france:hover > .submenu-france {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+.submenu-down > .italy:hover > .submenu-italy {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}

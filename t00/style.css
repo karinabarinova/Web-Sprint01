@@ -1,0 +1,12 @@
+.wrap {
+    float: left;
+    margin: 1em;
+    height: 300px;
+}
+
+@media print {
+    .wrap {
+        float: none;
+        margin: 1em;
+    }
+}
